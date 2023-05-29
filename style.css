@@ -8,8 +8,18 @@ body{
      rgba(227, 255, 248, 0) 82.08%, rgba(227, 255, 248, 0.38) 100%);
 
      min-height: 100vh;
-
+ 
 }
+
+::-webkit-scrollbar {
+    width: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background-color: #2c2c31;
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: #9e9ea0;
+  }
 
 .page{
     width: 1000px;
@@ -36,19 +46,20 @@ ul{
     padding: 0;
     
 }
-
-/*pseud-class (hover) (deixa em bold quando passa com o mouse em cima*/
-ul li a:hover {
-    font-weight: bold;
-}
-
-
 ul li a {
     /* retira sublinhado */
     text-decoration: none;
     
     color: #1F1534;
+    opacity: 0.5;
 }
+
+/*pseud-class (hover) (deixa em bold quando passa com o mouse em cima*/
+ul li a:hover {
+    font-weight: bold;
+    opacity: 1;
+}
+
 
 h1 ul{
     font-family: 'Mulish', sans-serif;
